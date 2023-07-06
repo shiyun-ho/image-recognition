@@ -1,0 +1,12 @@
+<h2>Camera</h2>
+<div>
+    <webcam [trigger]="trigger"></webcam>
+</div>
+
+<div>
+    <button type="button" (click)="snap()">Snap</button>
+</div>
+
+<div *ngFor="let pic of pics">
+    <img [src]="pic" width="50">
+</div>
